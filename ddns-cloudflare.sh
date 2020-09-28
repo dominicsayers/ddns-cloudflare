@@ -74,7 +74,7 @@ if [ ! $DNS_IP ]; then
 fi
 
 # get current external IP
-CURRENT_IP=`curl -s http://icanhazip.com`
+CURRENT_IP=`curl -s4 http://icanhazip.com`
 
 if [ "$DNS_IP" != "$CURRENT_IP" ] || [ $FORCE ]; then
   UPDATE=`curl -s -X PUT "$API_URL/$ZONE_ID/dns_records/$DNSREC_ID" \
