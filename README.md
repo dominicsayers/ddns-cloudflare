@@ -22,6 +22,14 @@ The `DNSREC_ID` is the API's `id` of the record you want to update. You can find
 ddns-cloudflare.sh --list
 ```
 
+## Prerequisites
+
+This script assumes `jq` is installed. Installation instructions for `jq` are beyond the scope of this README but, for example, on Ubuntu you'd type:
+
+```bash
+sudo snap install jq
+```
+
 ## Acknowledgements
 
 Most of this script is cribbed from `netphantm`'s [miscellaneous scripts](https://github.com/netphantm/scripts) repository.
